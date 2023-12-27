@@ -45,6 +45,7 @@ function CreateCabinForm({ cabinToEdit = {}, closeForm }) {
           onSuccess: () => reset(),
         }
       );
+    closeForm((show) => !show);
   }
 
   function onError(errors) {
