@@ -53,6 +53,8 @@ const Button = styled.button`
   }
 `;
 
+// compound component react pattern
+// creating context
 const Modalcontext = createContext();
 
 function Modal({ children }) {
@@ -72,7 +74,7 @@ function Open({ children, opens: opensWindowName }) {
   const { open } = useContext(Modalcontext);
 
   // Cloning element advance react property
-  // here we are return children with new prop new version of children
+  // here we return children with new prop new version of children
   return cloneElement(children, { onClick: () => open(opensWindowName) });
 }
 
