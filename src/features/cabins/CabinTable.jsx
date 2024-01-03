@@ -6,13 +6,15 @@ import Spinner from "./../../ui/Spinner";
 import CabinRow from "./CabinRow";
 import Table from "../../ui/Table";
 import Menus from "../../ui/Menus";
+import Empty from "../../ui/Empty";
 
 function CabinTable() {
   const { isLoading, cabins } = useCabins();
   const [searchParams] = useSearchParams();
 
-  
   if (isLoading) return <Spinner />;
+  if (!cabins.length) return <Empty resourceName="bookings" />;
+
   // 1> FILTER
   // using short circuiting for setting it to all when arriving to cabin for the first time
   const filterValue = searchParams.get("discount") || "all";
@@ -23,8 +25,6 @@ function CabinTable() {
     filteredCabins = cabins.filter((cabin) => cabin.discount === 0);
   if (filterValue === "with-discount")
     filteredCabins = cabins.filter((cabin) => cabin.discount > 0);
-
-  console.log(filteredCabins);
 
   // // 2> SORT
   const SortByValue = searchParams.get("sortBy") || "startDate-asc";
