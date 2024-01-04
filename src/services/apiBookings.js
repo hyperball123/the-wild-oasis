@@ -7,13 +7,20 @@ export async function getBookings({ filter, sortBy }) {
     .select(
       "id ,created_at,startDate,endDate,numNights,numGuests,status , totalPrice,cabins(name), guests(fullName,email)"
     );
+  // above we are selecting the data we want in bookings table
 
   // FILTER
-  if (filter !== null)
-    query = query[filter.method || "eq"](filter.field, filter.value);
+  if (filter) query = query[filter.method || "eq"](filter.field, filter.value);
+
+  // SORT
+
+  // using order method from supabase Api ,which tells the database how you want the results of your query to be arranged or sorted
+  if (sortBy)
+    query = query.order(sortBy.field, {
+      ascending: sortBy.direction === "asc",
+    });
 
   const { data, error } = await query;
-  // above we are selecting the data we want in bookings table
   if (error) {
     console.error(error);
     throw new Error("Bookings could not be loaded");
