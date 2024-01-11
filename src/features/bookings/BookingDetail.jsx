@@ -76,6 +76,7 @@ function BookingDetail() {
           <Modal.Open opens="delete">
             <Button variation="danger">Delete booking</Button>
           </Modal.Open>
+          
           <Modal.Window name="delete">
             <ConfirmDelete
               resourceName="booking"
