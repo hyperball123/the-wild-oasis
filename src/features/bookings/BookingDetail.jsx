@@ -89,6 +89,7 @@ function BookingDetail() {
             ></ConfirmDelete>
           </Modal.Window>
         </Modal>
+        
         <Button variation="secondary" onClick={moveBack}>
           Back
         </Button>
