@@ -66,7 +66,7 @@ const Guest = styled.div`
   & p:first-of-type {
     font-weight: 500;
     color: var(--color-grey-700);
-  }
+  } 
 `;
 
 const Price = styled.div`
