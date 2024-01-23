@@ -92,6 +92,8 @@ function Toggle({ id }) {
     // event will then never travel up the dom and click wont be detected outside e.stopPropagation();
     e.stopPropagation();
 
+    // This method returns a DOMRect object that contains properties like top, left, width, height, etc.
+    // So, the rect variable will hold the position and size information of the closest <button> element to the event target.
     const rect = e.target.closest("button").getBoundingClientRect();
 
     setPosition({
@@ -122,6 +124,7 @@ function List({ id, children }) {
     document.body
   );
 }
+
 function Button({ children, icon, onClick }) {
   const { close } = useContext(MenusContext);
 
