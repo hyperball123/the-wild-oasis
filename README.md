@@ -22,9 +22,9 @@ UI State Management: Context API
 Form Management: React Hook Form
 Other Tools: React Icons, React Hot Toast, Recharts, Date-fns, Supabase, React Error Boundary
 
-Project Requirements 📋
-The application caters to the specific needs of hotel employees. Here are some of the key requirements:
+What I Learned Building The Wild Oasis Project 🚀
 
+<<<<<<< HEAD
       ➡️Users must log in to the application to perform tasks.<br/>
       ➡️New users can only be signed up within the application,ensuring only genuine hotel employees have
       accounts.<br/>
@@ -39,11 +39,60 @@ The application caters to the specific needs of hotel employees. Here are some o
       ➡️Statistics on recent bookings, sales, check-ins, and occupancy rate.<br/>
       ➡️Application-wide settings for breakfast price, min and max nights/booking, and max guests/booking.<br/>
       ➡️Dark mode for enhanced user experience.</p>
+=======
+Technical Skills➡️
+React.js Mastery: Learned how to architect a React application from scratch, leveraging the power of components, state management, and hooks.
+>>>>>>> 02fcd6f0966a824ffe18cd96933f0fd8fc063572
 
-Getting Started 🚀
-To get started with The Wild Oasis project, follow these steps:
+Styled Components: Explored the benefits of styling components with Styled Components, enhancing modularity and maintainability.
 
-Clone the repository: git clone [repository_url]
+React Router: Implemented navigation with React Router, ensuring a smooth user experience with seamless page transitions.
+
+React Query for Remote State Management: Utilized React Query to efficiently manage and synchronize state with the server, optimizing performance.
+
+Advanced Context API for UI State Management: Delved into advanced uses of Context API for managing UI state across components, enhancing overall application responsiveness.
+
+Form Management with React Hook Form: Mastered form handling with React Hook Form, improving user interactions and data validation.
+
+Reusable Components and Logic with Custom Hooks: Explored the creation of custom hooks to encapsulate and reuse components and logic, promoting code reusability.
+
+Compound Components and Render Props: Implemented React compound components and utilized render props to create flexible and extensible UI structures.
+
+External Libraries Integration: Incorporated various external libraries such as React Icons, React Hot Toast, Recharts, and Date-fns to enhance functionality and user experience.
+
+CRUD Operations and Data Management➡️
+Supabase Integration: Integrated Supabase for backend services, gaining hands-on experience in database interactions and CRUD operations.
+
+Use of useRef: Employed useRef for efficient handling of references, particularly useful in managing form input focus and data manipulation.
+
+Application Design and Layout➡️
+
+-Layout Strategies: Explored different strategies for laying out the application, organizing components, and structuring the user interface to ensure scalability and maintainability.
+
+Project-Specific Functionalities➡️
+
+Authentication and User Management: Implemented secure user authentication, allowing only authorized hotel employees to access and manage the application.
+
+Avatars and User Profile Management: Enabled users to upload avatars, and change names, and passwords, enhancing personalization and user control.
+
+Detailed Table Views and Filtering: Designed detailed table views for cabins and bookings, with filterable booking statuses for better information retrieval.
+
+Guest Interaction and Data Management: Implemented features for guest interactions, including check-in, check-out, and the addition of breakfast during check-in. Managed guest data effectively.
+
+Dashboard and Statistics: Created a dynamic dashboard displaying crucial information over specified time frames, incorporating statistics on bookings, sales, check-ins, and occupancy rates.
+
+Application-wide Settings: Implemented application-wide settings for parameters such as breakfast price, minimum and maximum nights/booking, and maximum guests/booking.
+
+Dark Mode: Enhanced the user experience by implementing a dark mode feature for improved visibility and aesthetics.
+
+Collaboration and Contribution➡️
+Git and Version Control: Utilized Git for version control, ensuring a collaborative and organized development process.
+
+Getting Started➡️
+
+To contribute or explore The Wild Oasis project:
+
+Clone the repository: git clone (https://github.com/hyperball123/the-wild-oasis)
 Install dependencies: npm install
 Start the development server: npm start
 Explore the application at http://localhost:3000
