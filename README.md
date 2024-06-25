@@ -42,7 +42,6 @@ What I Learned Building The Wild Oasis Project 🚀
 =======
 Technical Skills➡️
 React.js Mastery: Learned how to architect a React application from scratch, leveraging the power of components, state management, and hooks.
->>>>>>> 02fcd6f0966a824ffe18cd96933f0fd8fc063572
 
 Styled Components: Explored the benefits of styling components with Styled Components, enhancing modularity and maintainability.
 
